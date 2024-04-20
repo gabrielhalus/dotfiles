@@ -1,0 +1,8 @@
+[user]
+	name = Gabriel Halus
+	email = gabrielhalus@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
