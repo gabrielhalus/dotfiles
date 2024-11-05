@@ -9,3 +9,4 @@
 	p = push
 	pf = push --force-with-lease
 	rv = remote -v
+	br = branch
