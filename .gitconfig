@@ -10,3 +10,4 @@
 	pf = push --force-with-lease
 	rv = remote -v
 	br = branch
+	pr = pull --rebase
