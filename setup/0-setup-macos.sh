@@ -9,6 +9,9 @@ defaults write com.apple.dock springboard-columns -int 8
 defaults write com.apple.dock springboard-rows -int 6
 killall Dock
 
+# Make auto-hide dock show faster
+defaults write com.apple.dock autohide-delay -float 0; killall Dock
+
 # Show path bar in finder
 defaults write com.apple.finder ShowPathbar -bool true
 killall Finder
