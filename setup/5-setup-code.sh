@@ -20,6 +20,7 @@ EXTENSIONS=(
   antfu.vite
   oven.bun-vscode
   tamasfe.even-better-toml
+  wayou.vscode-todo-highlight
 )
 
 for ext in "${EXTENSIONS[@]}"; do
