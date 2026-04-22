@@ -1,0 +1,15 @@
+[user]
+	name = Gabriel Halus
+	email = gabrielhalus@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	p = push
+	pf = push --force-with-lease
+	rv = remote -v
+	br = branch
+	pr = pull --rebase
+	c0 = commit -c @{0}
+	cne = commit --amend --no-edit
