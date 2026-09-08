@@ -45,7 +45,10 @@ automatically-unhide-macos-hidden-apps = true
 # even when they are invisible.
 # This config version is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+persistent-workspaces = [
+  "1", "2", "3", "4", "5", "6", "7", "8", "9",
+  "11", "12", "13", "14", "15", "16", "17", "18", "19"
+]
 
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -161,12 +164,43 @@ on-mode-changed = []
     cmd-h = [] # Disable "hide application"
     cmd-alt-h = [] # Disable "hide others"
 
+    alt-backtick = 'mode secondary'
+
+# 'secondary' binding mode declaration
+# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
+[mode.secondary.binding]
+
+    # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
+    alt-1 = ['workspace 11', 'mode main']
+    alt-2 = ['workspace 12', 'mode main']
+    alt-3 = ['workspace 13', 'mode main']
+    alt-4 = ['workspace 14', 'mode main']
+    alt-5 = ['workspace 15', 'mode main']
+    alt-6 = ['workspace 16', 'mode main']
+    alt-7 = ['workspace 17', 'mode main']
+    alt-8 = ['workspace 18', 'mode main']
+    alt-9 = ['workspace 19', 'mode main']
+
+
+    # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+    alt-shift-1 = ['move-node-to-workspace 11', 'mode main']
+    alt-shift-2 = ['move-node-to-workspace 12', 'mode main']
+    alt-shift-3 = ['move-node-to-workspace 13', 'mode main']
+    alt-shift-4 = ['move-node-to-workspace 14', 'mode main']
+    alt-shift-5 = ['move-node-to-workspace 15', 'mode main']
+    alt-shift-6 = ['move-node-to-workspace 16', 'mode main']
+    alt-shift-7 = ['move-node-to-workspace 17', 'mode main']
+    alt-shift-8 = ['move-node-to-workspace 18', 'mode main']
+    alt-shift-9 = ['move-node-to-workspace 19', 'mode main']
+
+    alt-backtick = 'mode main'
+
 [[on-window-detected]]
     if.app-id = 'com.microsoft.VSCode'
     run = ['move-node-to-workspace 1 --focus-follows-window']
 
 [[on-window-detected]]
-    if.app-id = 'app.zen-browser.zen'
+    if.app-id = 'company.thebrowser.Browser'
     run = ['move-node-to-workspace 2 --focus-follows-window']
 
 [[on-window-detected]]
@@ -174,7 +208,11 @@ on-mode-changed = []
     run = ['move-node-to-workspace 3 --focus-follows-window']
 
 [[on-window-detected]]
-    if.app-id = 'md.obsidian'
+    if.app-id = 'com.apple.mail'
+    run = ['move-node-to-workspace 4 --focus-follows-window']
+
+[[on-window-detected]]
+    if.app-id = 'org.mozilla.thunderbird'
     run = ['move-node-to-workspace 4 --focus-follows-window']
 
 [[on-window-detected]]
@@ -182,14 +220,26 @@ on-mode-changed = []
     run = ['move-node-to-workspace 6 --focus-follows-window']
 
 [[on-window-detected]]
+    if.app-id = 'net.whatsapp.WhatsApp'
+    run = ['move-node-to-workspace 7 --focus-follows-window']
+
+[[on-window-detected]]
     if.app-id = 'com.hnc.Discord'
-    run = ['move-node-to-workspace 9 --focus-follows-window']
+    run = ['move-node-to-workspace 8 --focus-follows-window']
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.reminders'
+    run = ['move-node-to-workspace 14 --focus-follows-window']
 
 [workspace-to-monitor-force-assignment]
     6 = ['secondary', 'main']
     7 = ['secondary', 'main']
     8 = ['secondary', 'main']
     9 = ['secondary', 'main']
+    16 = ['secondary', 'main']
+    17 = ['secondary', 'main']
+    18 = ['secondary', 'main']
+    19 = ['secondary', 'main']
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
