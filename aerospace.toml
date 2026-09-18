@@ -165,6 +165,7 @@ on-mode-changed = []
     cmd-alt-h = [] # Disable "hide others"
 
     alt-backtick = 'mode secondary'
+    alt-sectionSign = 'mode secondary'
 
 # 'secondary' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
