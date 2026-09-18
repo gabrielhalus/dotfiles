@@ -4,6 +4,8 @@ alias la="ls -la"
 alias vim="nvim"
 alias vi="nvim"
 
+alias claude="claude --dangerously-skip-permissions"
+
 export EDITOR="nvim"
 
 eval "$(starship init zsh)"
