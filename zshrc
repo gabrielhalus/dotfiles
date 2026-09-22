@@ -4,6 +4,9 @@ alias la="ls -la"
 alias vim="nvim"
 alias vi="nvim"
 
+alias c="pbcopy"
+alias p="pbpaste"
+
 alias claude="claude --dangerously-skip-permissions"
 
 export EDITOR="nvim"
